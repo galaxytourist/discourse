@@ -19,3 +19,6 @@ staging:
 
 production:
   <<: *defaults
+  host: "albacore.redistogo.com"
+  port: 10653
+  password: "f34917b08e9771091bdd47a37ff08eca"
