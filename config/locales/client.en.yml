@@ -544,7 +544,7 @@ en:
       reply_here: "Reply Here"
       reply: "Reply"
       cancel: "Cancel"
-      create_topic: "Create Topic"
+      create_topic: "Ask Question"
       create_pm: "Create Private Message"
       title: "Or press Ctrl+Enter"
 
@@ -683,7 +683,7 @@ en:
 
     topic:
       filter_to: "{{post_count}} posts in topic"
-      create: 'Create Topic'
+      create: 'Ask Question'
       create_long: 'Create a new Topic'
       private_message: 'Start a private message'
       list: 'Topics'
