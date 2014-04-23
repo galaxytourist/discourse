@@ -6,7 +6,10 @@ defaults: &defaults
 
 development:
   <<: *defaults
-
+  host: "albacore.redistogo.com"
+  port: 10653
+  password: "0f39592563353ee0c25ef6e84a9b7e70"
+  
 profile:
   <<: *defaults
 
@@ -21,4 +24,4 @@ production:
   <<: *defaults
   host: "albacore.redistogo.com"
   port: 10653
-  password: "f34917b08e9771091bdd47a37ff08eca"
+  password: "0f39592563353ee0c25ef6e84a9b7e70"
