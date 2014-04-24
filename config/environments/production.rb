@@ -41,8 +41,17 @@ Discourse::Application.configure do
 
     config.action_mailer.smtp_settings = settings.reject{|x,y| y.nil?}
   else
-    config.action_mailer.delivery_method = :sendmail
-    config.action_mailer.sendmail_settings = {arguments: '-i'}
+  #  config.action_mailer.delivery_method = :sendmail
+  #  config.action_mailer.sendmail_settings = {arguments: '-i'}
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :port =>           '587',
+      :address =>        'smtp.mandrillapp.com',
+      :user_name =>      ENV['app24468525@heroku.com'],
+      :password =>       ENV['1aeJ7HxbxBsI0Fldt2UCWw'],
+      :domain =>         'heroku.com',
+      :authentication => :plain
+    }
   end
 
   # Send deprecation notices to registered listeners
