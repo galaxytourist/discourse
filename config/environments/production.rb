@@ -47,8 +47,8 @@ Discourse::Application.configure do
     config.action_mailer.smtp_settings = {
       :port =>           '587',
       :address =>        'smtp.mandrillapp.com',
-      :user_name =>      ENV['app24468525@heroku.com'],
-      :password =>       ENV['1aeJ7HxbxBsI0Fldt2UCWw'],
+      :user_name =>      'app24468525@heroku.com',
+      :password =>       '1aeJ7HxbxBsI0Fldt2UCWw',
       :domain =>         'heroku.com',
       :authentication => :plain
     }
