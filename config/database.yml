@@ -33,6 +33,15 @@ profile:
   host_names:
     - "localhost"
 
+production:
+  adapter: postgresql
+  database: discourse_development
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  host_names:
+    - "localhost"
+
 # You may be surprised production is not here, it is sourced from application.rb using a monkey patch
 # This is done for 2 reasons
 #
