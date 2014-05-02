@@ -12,6 +12,8 @@ Sidekiq.configure_server do |config|
   end
 end
 
+sidekiq_redis = { url: $redis.url, namespace: 'sidekiq' }
+
 if Rails.env.production?
 
   require 'autoscaler/sidekiq'
