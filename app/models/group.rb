@@ -238,11 +238,12 @@ end
 #
 #  id          :integer          not null, primary key
 #  name        :string(255)      not null
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  created_at  :datetime
+#  updated_at  :datetime
 #  automatic   :boolean          default(FALSE), not null
 #  user_count  :integer          default(0), not null
 #  alias_level :integer          default(0)
+#  visible     :boolean          default(TRUE), not null
 #
 # Indexes
 #

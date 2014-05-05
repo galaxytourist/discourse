@@ -4,6 +4,9 @@ development:
   min_messages: warning
   pool: 5
   timeout: 5000
+  username: discourse
+  password: discourse
+  host: localhost
   host_names:
     ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
     ### If you change this setting you will need to
@@ -20,6 +23,9 @@ test:
   min_messages: warning
   pool: 5
   timeout: 5000
+  username: discourse
+  password: discourse
+  host: localhost
   host_names:
     - test.localhost
 
@@ -33,14 +39,25 @@ profile:
   host_names:
     - "localhost"
 
+# production:
+#   adapter: postgresql
+#   database: discourse_development
+#   min_messages: warning
+#   pool: 5
+#   timeout: 5000
+#   host_names:
+#     - "localhost"
+
 production:
   adapter: postgresql
-  database: discourse_development
+  database: discourse_production
+  username: jmkliruopstjoh
+  password: uwDq9tZPhEw7za-OTHvDJWvb-U
   min_messages: warning
   pool: 5
   timeout: 5000
   host_names:
-    - "localhost"
+    - www.inquirus.com
 
 # You may be surprised production is not here, it is sourced from application.rb using a monkey patch
 # This is done for 2 reasons

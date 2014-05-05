@@ -729,8 +729,8 @@ end
 #
 #  id                            :integer          not null, primary key
 #  username                      :string(60)       not null
-#  created_at                    :datetime         not null
-#  updated_at                    :datetime         not null
+#  created_at                    :datetime
+#  updated_at                    :datetime
 #  name                          :string(255)
 #  bio_raw                       :text
 #  seen_notification_id          :integer          default(0), not null
@@ -774,9 +774,10 @@ end
 #  uploaded_avatar_id            :integer
 #  email_always                  :boolean          default(FALSE), not null
 #  mailing_list_mode             :boolean          default(FALSE), not null
-#  primary_group_id              :integer
 #  locale                        :string(10)
+#  primary_group_id              :integer
 #  profile_background            :string(255)
+#  registration_ip_address       :inet
 #
 # Indexes
 #
